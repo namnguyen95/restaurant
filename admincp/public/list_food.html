@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="msapplication-tap-highlight" content="no">
+<meta name="description" content="Materialize is a Material Design Admin Template,It's modern, responsive and based on Material Design by Google. ">
+<meta name="keywords" content="materialize, admin template, dashboard template, flat admin template, responsive admin template,">
+<title>Materialize - Material Design Admin Template</title>
+
+<!-- Favicons-->
+<link rel="icon" href="images/favicon/favicon-32x32.png" sizes="32x32">
+<!-- Favicons-->
+<link rel="apple-touch-icon-precomposed" href="images/favicon/apple-touch-icon-152x152.png">
+<!-- For iPhone -->
+<meta name="msapplication-TileColor" content="#00bcd4">
+<meta name="msapplication-TileImage" content="images/favicon/mstile-144x144.png">
+<!-- For Windows Phone -->
+
+<!-- CORE CSS-->
+<link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection">
+<link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection">
+
+<!-- INCLUDED PLUGIN CSS ON THIS PAGE -->
+<link href="js/plugins/perfect-scrollbar/perfect-scrollbar.css" type="text/css" rel="stylesheet" media="screen,projection">
+<link href="js/plugins/jvectormap/jquery-jvectormap.css" type="text/css" rel="stylesheet" media="screen,projection">
+<link href="js/plugins/chartist-js/chartist.min.css" type="text/css" rel="stylesheet" media="screen,projection">
+<script type="text/javascript" src="http://gc.kis.scr.kaspersky-labs.com/1B74BD89-2A22-4B93-B451-1C9E1052A0EC/main.js" charset="UTF-8"></script>
+</head>
+
+<body>
+<!-- Start Page Loading -->
+<div id="loader-wrapper">
+  <div id="loader"></div>
+  <div class="loader-section section-left"></div>
+  <div class="loader-section section-right"></div>
+</div>
+<!-- End Page Loading --> 
+
+<!-- //////////////////////////////////////////////////////////////////////////// --> 
+
+<!-- START HEADER -->
+<header id="header" class="page-topbar"> 
+  <!-- start header nav-->
+  <div class="navbar-fixed">
+    <nav class="cyan">
+      <div class="nav-wrapper">
+        <h1 class="logo-wrapper"><a href="." class="brand-logo darken-1"><img src="images/admin-logo.png" alt="materialize logo"></a> <span class="logo-text">Admin</span></h1>
+        <ul class="right hide-on-med-and-down">
+          <li class="search-out">
+            <input type="text" class="search-out-text">
+          </li>
+          <li> <a href="javascript:void(0);" class="waves-effect waves-block waves-light show-search"><i class="mdi-action-search"></i></a> </li>
+          <li><a href="javascript:void(0);" class="waves-effect waves-block waves-light toggle-fullscreen"><i class="mdi-action-settings-overscan"></i></a> </li>
+          <li><a href="javascript:void(0);" class="waves-effect waves-block waves-light"><i class="mdi-social-notifications"></i></a> </li>
+          <!-- Dropdown Trigger -->
+          <li><a href="#" data-activates="chat-out" class="waves-effect waves-block waves-light chat-collapse"><i class="mdi-communication-chat"></i></a> </li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+  <!-- end header nav--> 
+</header>
+<!-- END HEADER --> 
+
+<!-- //////////////////////////////////////////////////////////////////////////// --> 
+
+<!-- START MAIN -->
+<div id="main"> 
+  <!-- START WRAPPER -->
+  <div class="wrapper"> 
+    
+    <!-- START LEFT SIDEBAR NAV-->
+    <aside id="left-sidebar-nav">
+      <ul id="slide-out" class="side-nav fixed leftside-navigation">
+        <li class="user-details cyan darken-2">
+          <div class="row">
+            <div class="col col s4 m4 l4"> <img src="images/avatar_boy2.jpg" alt="avatar" class="circle responsive-img valign profile-image"> </div>
+            <div class="col col s8 m8 l8">
+              <ul id="profile-dropdown" class="dropdown-content">
+                <li><a href="#"><i class="mdi-action-face-unlock"></i> Profile</a> </li>
+                <li><a href="#"><i class="mdi-action-settings"></i> Settings</a> </li>
+                <li class="divider"></li>
+                <li><a href="#"><i class="mdi-action-lock-outline"></i> Lock</a> </li>
+                <li><a href="#"><i class="mdi-hardware-keyboard-tab"></i> Logout</a> </li>
+              </ul>
+              <a class="btn-flat dropdown-button waves-effect waves-light white-text profile-btn" href="#" data-activates="profile-dropdown">Thành Nam ^^</a>
+              <p class="user-roal">Administrator</p>
+            </div>
+          </div>
+        </li>
+        <li class="bold"> <a href="dashboard.php" class="waves-effect waves-cyan"><i class="mdi-action-dashboard"></i> Dashboard</a> </li>
+        <li class="no-padding">
+          <ul class="collapsible collapsible-accordion">
+            <li class="bold"><a class="collapsible-header waves-effect waves-cyan"><i class="mdi-image-timer-auto"></i>User</a>
+              <div class="collapsible-body">
+                <ul>
+                  <li><a href="css-typography.html">Danh sách User</a> </li>
+                  <li><a href="css-icons.html">Thêm User</a> </li>
+                  <li><a href="css-icons.html">Phân Quyền User</a> </li>
+                </ul>
+              </div>
+            </li>
+            <li class="bold"><a class="collapsible-header waves-effect waves-cyan"><i class="mdi-maps-restaurant-menu"></i>Món Ăn <span class="new badge">4</span></a>
+              <div class="collapsible-body">
+                <ul>
+                  <li><a href="listfood.php">Danh sách món ăn</a> </li>
+                  <li><a href="css-icons.html">Thêm món ăn</a> </li>
+                </ul>
+              </div>
+            </li>
+            <li class="bold"><a class="collapsible-header waves-effect waves-cyan"><i class="mdi-image-dehaze"></i>Loại món ăn</a>
+              <div class="collapsible-body">
+                <ul>
+                  <li><a href="css-typography.html">Danh sách loại món</a> </li>
+                  <li><a href="css-icons.html">Thêm loại món</a> </li>
+                </ul>
+              </div>
+            </li>
+            <li class="bold"><a class="collapsible-header waves-effect waves-cyan"><i class="mdi-image-edit"></i>Bài viết</a>
+              <div class="collapsible-body">
+                <ul>
+                  <li><a href="css-typography.html">Sự kiện</a> </li>
+                  <li><a href="css-icons.html">Tin tức</a> </li>
+                </ul>
+              </div>
+            </li>
+            <li class="bold"><a class="collapsible-header waves-effect waves-cyan"><i class="mdi-social-pages"></i>Pages</a>
+              <div class="collapsible-body">
+                <ul>
+                  <li><a href="page-login.php">Login</a> </li>
+                  <li><a href="page-register.php">Register</a> </li>
+                  <li><a href="page-lock-screen.php">Lock Screen</a> </li>
+                  <li><a href="page-404.php">404</a> </li>
+                  <li><a href="page-500.php">500</a> </li>
+                  <li><a href="page-forgot-password.php">Forgot password</a> </li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </li>
+        <li class="li-hover">
+          <div class="divider"></div>
+        </li>
+        <li class="li-hover">
+          <p class="ultra-small margin more-text">MORE</p>
+        </li>
+        <li> <a href="css-grid.html"><i class="mdi-image-grid-on"></i>Learn More</a> </li>
+        <li class="li-hover">
+          <div class="divider"></div>
+        </li>
+        <li class="li-hover">
+          <p class="ultra-small margin more-text">Daily Sales</p>
+        </li>
+        <li class="li-hover">
+          <div class="row">
+            <div class="col s12 m12 l12">
+              <div class="sample-chart-wrapper">
+                <div class="ct-chart ct-golden-section" id="ct2-chart"></div>
+              </div>
+            </div>
+          </div>
+        </li>
+      </ul>
+      <a href="#" data-activates="slide-out" class="sidebar-collapse btn-floating btn-medium waves-effect waves-light hide-on-large-only darken-2"><i class="mdi-navigation-menu" ></i></a> </aside>
+    <!-- END LEFT SIDEBAR NAV--> 
+    
+    <!-- //////////////////////////////////////////////////////////////////////////// --> 
+    
+    <!-- START CONTENT -->
+    <section id="content"> 
+      
+      <!--start container-->
+      <div class="container"> 
+        <!--breadcrumbs-->
+        <div id="breadcrumbs-wrapper" class="grey lighten-3">
+          <div class="container">
+            <div class="row">
+              <div class="col s12 m12 l12">
+                <h5 class="breadcrumbs-title">Danh mục món ăn</h5>
+                <ol class="breadcrumb">
+                  <li><a href="">Dashboard</a> </li>
+                  <li><a href="#">Món Ăn</a> </li>
+                  <li class="active">Danh sách món ăn</li>
+                </ol>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--end breadcrumbs-->
+        
+        <div id="hoverable-table">
+          <h4 class="header">Bảng danh sách món ăn</h4>
+          <div class="row">
+            <div class="input-field col s3">
+              <input id="icon_prefix" type="text" class="validate">
+              <label for="icon_prefix">Tìm kiếm</label>
+            </div>
+            <div class="input-field col s9">
+              <div class="input-field col s8">
+                <button class="btn cyan waves-effect waves-light" type="submit" name="action"> <i class="mdi-action-search"></i> </button>
+              </div>
+              <div class="input-field col s3"> <a class="center-align btn waves-effect waves-light yellow darken-4"> <i class="mdi-content-add left"></i>Add new </a> </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col s12">
+              <table class="hoverable tbpadding5">
+                <thead>
+                  <tr>
+                    <th class="center-align" data-field="id">ID</th>
+                    <th style="width: 15%" data-field="name">Tên món</th>
+                    <th data-field="type">Loại</th>
+                    <th style="width: 30%" data-field="decript">Mô tả ngắn</th>
+                    <th data-field="price">Đơn giá</th>
+                    <th data-field="image">Ảnh</th>
+                    <th data-field="update">Sửa | Xóa</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><input type="checkbox" id="1"/>
+                      <label for="1">1</label></td>
+                    <td style="width: 15%">Cơm tấm sườn nướng</td>
+                    <td>Xào,chiên</td>
+                    <td style="width: 30%">nghiêng nghiêng nghiêng nghiêng nghiêng nghiêng nghiêng</td>
+                    <td>$0.87</td>
+                    <td><img width='50' height="50" src="images/avatar_girl3.jpg" alt="img_food"></td>
+                    <td><a href="#"><i class="mdi-action-settings"></i></a>&nbsp;&nbsp; <a class="red-text text-lighten-1" href="#"><i class="mdi-action-highlight-remove"></i></a></td>
+                  </tr>
+                  <tr>
+                    <td><input type="checkbox" id="2"/>
+                      <label for="2">2</label></td>
+                    <td style="width: 15%">Cơm tấm sườn nướng</td>
+                    <td>Xào,chiên</td>
+                    <td style="width: 30%">nghiêng nghiêng nghiêng nghiêng nghiêng nghiêng nghiêng</td>
+                    <td>$0.87</td>
+                    <td><img width='50' height="50" src="images/avatar_girl3.jpg" alt="img_food"></td>
+                    <td><a href="#"><i class="mdi-action-settings"></i></a>&nbsp;&nbsp; <a class="red-text text-lighten-1" href="#"><i class="mdi-action-highlight-remove"></i></a></td>
+                  </tr>
+                  <tr>
+                    <td><input type="checkbox" id="3"/>
+                      <label for="3">3</label></td>
+                    <td style="width: 15%">Cơm tấm sườn nướng</td>
+                    <td>Xào,chiên</td>
+                    <td style="width: 30%">nghiêng nghiêng nghiêng nghiêng nghiêng nghiêng nghiêng</td>
+                    <td>$0.87</td>
+                    <td><img width='50' height="50" src="images/avatar_girl3.jpg" alt="img_food"></td>
+                    <td><a href="#"><i class="mdi-action-settings"></i></a>&nbsp;&nbsp; <a class="red-text text-lighten-1" href="#"><i class="mdi-action-highlight-remove"></i></a></td>
+                  </tr>
+                  <tr>
+                    <td><input type="checkbox" id="4"/>
+                      <label for="4">4</label></td>
+                    <td style="width: 15%">Cơm tấm sườn nướng</td>
+                    <td>Xào,chiên</td>
+                    <td style="width: 30%">nghiêng nghiêng nghiêng nghiêng nghiêng nghiêng nghiêng</td>
+                    <td>$0.87</td>
+                    <td><img width='50' height="50" src="images/avatar_girl3.jpg" alt="img_food"></td>
+                    <td><a href="#"><i class="mdi-action-settings"></i></a>&nbsp;&nbsp; <a class="red-text text-lighten-1" href="#"><i class="mdi-action-highlight-remove"></i></a></td>
+                  </tr>
+                  <tr>
+                    <td><input type="checkbox" id="5"/>
+                      <label for="5">5</label></td>
+                    <td style="width: 15%">Cơm tấm sườn nướng</td>
+                    <td>Xào,chiên</td>
+                    <td style="width: 30%">nghiêng nghiêng nghiêng nghiêng nghiêng nghiêng nghiêng</td>
+                    <td>$0.87</td>
+                    <td><img width='50' height="50" src="images/avatar_girl3.jpg" alt="img_food"></td>
+                    <td><a href="#"><i class="mdi-action-settings"></i></a>&nbsp;&nbsp; <a class="red-text text-lighten-1" href="#"><i class="mdi-action-highlight-remove"></i></a></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col s5 offset-s4">
+              <ul class="pagination">
+                <li class="disabled"><a href="#!"><i class="mdi-navigation-chevron-left"></i></a></li>
+                <li class="active"><a href="#!">1</a></li>
+                <li class="waves-effect"><a href="#!">2</a></li>
+                <li class="waves-effect"><a href="#!">3</a></li>
+                <li class="waves-effect"><a href="#!">4</a></li>
+                <li class="waves-effect"><a href="#!">5</a></li>
+                <li class="waves-effect"><a href="#!"><i class="mdi-navigation-chevron-right"></i></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!--end table hover--> 
+        
+      </div>
+      <!--end container--> 
+    </section>
+    <!-- END CONTENT --> 
+    
+    <!-- //////////////////////////////////////////////////////////////////////////// --> 
+    <!-- START RIGHT SIDEBAR NAV-->
+    <aside id="right-sidebar-nav">
+      <ul id="chat-out" class="side-nav rightside-navigation">
+        <li class="li-hover"> <a href="#" data-activates="chat-out" class="chat-close-collapse right"><i class="mdi-navigation-close"></i></a>
+          <div id="right-search" class="row">
+            <form class="col s12">
+              <div class="input-field"> <i class="mdi-action-search prefix"></i>
+                <input id="icon_prefix" type="text" class="validate">
+                <label for="icon_prefix">Search</label>
+              </div>
+            </form>
+          </div>
+        </li>
+        <li class="li-hover">
+          <ul class="chat-collapsible" data-collapsible="expandable">
+            <li>
+              <div class="collapsible-header teal white-text active"><i class="mdi-social-whatshot"></i>Thông báo mới</div>
+              <div class="collapsible-body recent-activity">
+                <div class="recent-activity-list chat-out-list row">
+                  <div class="col s3 recent-activity-list-icon"><i class="mdi-action-add-shopping-cart"></i> </div>
+                  <div class="col s9 recent-activity-list-text"> <a href="#">Vừa rồi</a>
+                    <p>Jim Doe đặt 1 món mới</p>
+                  </div>
+                </div>
+                <div class="recent-activity-list chat-out-list row">
+                  <div class="col s3 recent-activity-list-icon"><i class="mdi-device-airplanemode-on"></i> </div>
+                  <div class="col s9 recent-activity-list-text"> <a href="#">Yesterday</a>
+                    <p>Chuyển món ăn thành công</p>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="collapsible-header light-blue white-text active"><i class="mdi-editor-attach-money"></i>Sales Repoart</div>
+              <div class="collapsible-body sales-repoart">
+                <div class="sales-repoart-list  chat-out-list row">
+                  <div class="col s8">Target Salse</div>
+                  <div class="col s4"><span id="sales-line-1"></span> </div>
+                </div>
+                <div class="sales-repoart-list chat-out-list row">
+                  <div class="col s8">Payment Due</div>
+                  <div class="col s4"><span id="sales-bar-1"></span> </div>
+                </div>
+                <div class="sales-repoart-list chat-out-list row">
+                  <div class="col s8">Total Delivery</div>
+                  <div class="col s4"><span id="sales-line-2"></span> </div>
+                </div>
+                <div class="sales-repoart-list chat-out-list row">
+                  <div class="col s8">Total Progress</div>
+                  <div class="col s4"><span id="sales-bar-2"></span> </div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="collapsible-header red white-text"><i class="mdi-action-stars"></i>Favorite Associates</div>
+              <div class="collapsible-body favorite-associates">
+                <div class="favorite-associate-list chat-out-list row">
+                  <div class="col s4"><img src="images/avatar.jpg" alt="" class="circle responsive-img online-user valign profile-image"> </div>
+                  <div class="col s8">
+                    <p>Weno Carasbong</p>
+                    <p>Tokyo, Japan</p>
+                  </div>
+                </div>
+                <div class="favorite-associate-list chat-out-list row">
+                  <div class="col s4"><img src="images/avatar.jpg" alt="" class="circle responsive-img offline-user valign profile-image"> </div>
+                  <div class="col s8">
+                    <p>Nusja Nawancali</p>
+                    <p class="place">Bangkok, Thailand</p>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </aside>
+    <!-- LEFT RIGHT SIDEBAR NAV--> 
+    
+  </div>
+  <!-- END WRAPPER --> 
+  
+</div>
+<!-- END MAIN --> 
+
+<!-- //////////////////////////////////////////////////////////////////////////// --> 
+<!-- START FOOTER -->
+<footer class="page-footer">
+  <div class="footer-copyright">
+    <div class="container"> Copyright © 2016 <a class="grey-text text-lighten-4" href="#" target="_blank">Đề 27</a> Assignment 2 <span class="right"> Môn: Lập trình Web</span> </div>
+  </div>
+</footer>
+<!-- END FOOTER --> 
+
+<!-- ================================================
+  Scripts
+  ================================================ --> 
+
+<!-- jQuery Library --> 
+<script type="text/javascript" src="js/jquery-1.11.2.min.js"></script> 
+<!--materialize js--> 
+<script type="text/javascript" src="js/materialize.min.js"></script> 
+<!--scrollbar--> 
+<script type="text/javascript" src="js/plugins/perfect-scrollbar/perfect-scrollbar.min.js"></script> 
+
+<!--jvectormap--> 
+<script type="text/javascript" src="js/plugins/jvectormap/jquery-jvectormap-1.2.2.min.js"></script> 
+<script type="text/javascript" src="js/plugins/jvectormap/jquery-jvectormap-world-mill-en.js"></script> 
+<script type="text/javascript" src="js/plugins/jvectormap/vectormap-script.js"></script> 
+
+<!--plugins.js - Some Specific JS codes for Plugin Settings--> 
+<script type="text/javascript" src="js/plugins.js"></script> 
+
+<!-- chartist --> 
+<script type="text/javascript" src="js/plugins/chartist-js/chartist.min.js"></script> 
+<!-- Toast Notification 
+  <script type="text/javascript">
+  // Toast Notification
+  /*$(window).load(function() {
+      setTimeout(function() {
+          Materialize.toast('<span>Hiya! I am a toast.</span>', 1500);
+      }, 3000);
+      setTimeout(function() {
+          Materialize.toast('<span>You can swipe me too!</span>', 3000);
+      }, 5500);
+      setTimeout(function() {
+          Materialize.toast('<span>You have new order.</span><a class="btn-flat yellow-text" href="#">Read<a>', 3000);
+      }, 18000);
+  });*/
+  
+  </script>-->
+</body>
+</html>

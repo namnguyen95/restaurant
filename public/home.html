@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Assignment</title>
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="css/material.css">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link href="http://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.min.css" rel="stylesheet">
+<link href="css/style.css" rel="stylesheet">
+<!--Start of Zopim Live Chat Script-->
+<script type="text/javascript">
+window.$zopim||(function(d,s){var z=$zopim=function(c){z._.push(c)},$=z.s=
+d.createElement(s),e=d.getElementsByTagName(s)[0];z.set=function(o){z.set.
+_.push(o)};z._=[];z.set._=[];$.async=!0;$.setAttribute("charset","utf-8");
+$.src="//v2.zopim.com/?3UVbyE3AFJbXb0V5k33qP8zKcTaoRTkW";z.t=+new Date;$.
+type="text/javascript";e.parentNode.insertBefore($,e)})(document,"script");
+</script>
+<!--End of Zopim Live Chat Script-->
+</head>
+<body>
+<div id="wrapper">
+  <nav class="navbar navbar-default material_navbar">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+        <a href="home.html">
+        <p style="margin-top: 10px;font-size: 30px;color: #E44;font-weight: bold;">Restaurant</p>
+        </a> </div>
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="home.html" class="">Trang chủ</a></li>
+          <li><a href="about.html" class="">Giới thiệu</a></li>
+          <li><a href="menu.html" class="">Thực đơn</a></li>
+          <li><a href="services.html" class="">Dịch vụ</a></li>
+          <li><a href="contact.html" class="">Liên hệ</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!--content page -->
+  <div class="container">
+    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel"> 
+      <!-- Wrapper for slides -->
+      <div class="carousel-inner" role="listbox">
+        <div class="item active"> <img src="images/slide/bo_bit_tet.jpg" alt="slider">
+          <div class="carousel-caption">
+            <h1 class="textwhite">Bò bít tết thơm ngon từ thịt bò Mỹ</h1>
+            <p class="hidden-sm hidden-xs"> Chế biến từ thịt bò Mỹ hảo hạng, là món ăn mà bạn không nên bỏ qua khi đến với chúng tôi! </p>
+          </div>
+        </div>
+        <div class="item"> <img src="images/slide/pizza.jpg" alt="slider">
+          <div class="carousel-caption">
+            <h1 class="textwhite">Pizza to giá chỉ 98,000đ</h1>
+            <p class="hidden-sm hidden-xs"> Áp dụng ngày thứ 5 & thứ 6 hàng tuần, để đặt trước có thể gọi số: 04- 3789.3788 </p>
+          </div>
+        </div>
+        <div class="item"> <img src="images/slide/suon_cuu.jpg" alt="slider">
+          <div class="carousel-caption">
+            <h1 class="textwhite">Sườn cừu nướng mật ong</h1>
+            <p class="hidden-sm hidden-xs"> Những miếng sườn cừu Úc nướng mật ong rừng thơm ngọt, hãy nếm thử! </p>
+          </div>
+        </div>
+        <div class="item"> <img src="images/slide/nem_ran.jpg" alt="slider">
+          <div class="carousel-caption">
+            <h1 class="textwhite">Nem rán</h1>
+            <p class="hidden-sm hidden-xs"> Nem rán - món ăn cổ truyền, chế biến theo côn thức của ẩm thực Tràng An đầy tinh tế! </p>
+          </div>
+        </div>
+        <div class="item"> <img src="images/slide/com_suon.jpg" alt="slider">
+          <div class="carousel-caption">
+            <h1 class="textwhite">Cơm sườn nướng</h1>
+            <p class="hidden-sm hidden-xs"> Cơm tấm sườn nướng, món ăn rất quen thuộc với mỗi con người miền Nam! </p>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Controls --> 
+      <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev"> <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span> <span class="sr-only">Previous</span> </a> <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next"> <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span> <span class="sr-only">Next</span> </a> 
+    </div>
+    <div id="main">
+      <h2 class="page-header">Món ăn hôm nay</h2>
+      <div class="row" id="menutoday">
+        <div class="col-lg-4 col-md-4 col-sm-12">
+          <div class="thumbnail material_thumbnail"> <img src="images/menutoday/banh_my.jpg" alt="Thumbnail label" />
+            <div class="caption material_caption row">
+              <div class="col-sm-3">
+                <h3><span class="label label-info">25.000 đ</span></h3>
+              </div>
+              <div class="col-sm-9">
+                <h3><a href="#">Bánh mỳ kẹp thịt</a></h3>
+                <p>Món khai vị</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-12">
+          <div class="thumbnail material_thumbnail"> <img src="images/menutoday/com_suon.jpg" alt="Thumbnail label" />
+            <div class="caption material_caption row">
+              <div class="col-sm-3">
+                <h3><span class="label label-info">31.000 đ</span></h3>
+              </div>
+              <div class="col-sm-9">
+                <h3><a href="#">Bánh mỳ kẹp thịt</a></h3>
+                <p>Món khai vị</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-12">
+          <div class="thumbnail material_thumbnail"> <img src="images/menutoday/goi_cuon.jpg" alt="Thumbnail label" />
+            <div class="caption material_caption row">
+              <div class="col-sm-3">
+                <h3><span class="label label-info">40.000 đ</span></h3>
+              </div>
+              <div class="col-sm-9">
+                <h3><a href="#">Bánh mỳ kẹp thịt</a></h3>
+                <p>Món khai vị</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button type="button" class="btn btn-default material_btn material_btn_danger">Xem thêm</button>
+      <hr>
+      <h2 class="page-header">Món ăn mới!</h2>
+      <div class="row" id="whatnew">
+        <div class="col-sm-6 col-md-4">
+          <div class="thumbnail material_thumbnail"> <img src="images/menu/banh_cuon.jpg" alt="Thumbnail label" />
+            <div class="caption material_caption row">
+              <div class="col-sm-4">
+                <h3><span class="label label-info">45.000đ</span></h3>
+              </div>
+              <div class="col-sm-8">
+                <h3><a href="#">Bánh cuốn</a></h3>
+                <p>Giảm 20% đến hết 30/03/2016</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-4">
+          <div class="thumbnail material_thumbnail"> <img src="images/menu/cha_ca.jpg" alt="Thumbnail label" />
+            <div class="caption material_caption row">
+              <div class="col-sm-4">
+                <h3><span class="label label-info">60.000đ</span></h3>
+              </div>
+              <div class="col-sm-8">
+                <h3><a href="#">Chả cá</a></h3>
+                <p>Giảm 10% đến hết 30/03/2016</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-4">
+          <div class="thumbnail material_thumbnail"> <img src="images/menu/banh_khot.jpg" alt="Thumbnail label" />
+            <div class="caption material_caption row">
+              <div class="col-sm-4">
+                <h3><span class="label label-info">40.000đ</span></h3>
+              </div>
+              <div class="col-sm-8">
+                <h3><a href="#">Bánh khọt</a></h3>
+                <p>Giảm 20% đến hết 30/03/2016</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr>
+      <h1 class="page-header">Câu nói</h1>
+      <section id="media">
+        <div class="media row"> <a class="col-sm-4" href="#"> <img  class="media-object img-circle"  src="images/member/thanh_cuong.jpg"> </a>
+          <div class="col-sm-8">
+            <div class="caption">
+              <h2 style="color: #E44">Nguyễn Thanh Cường</h2>
+            </div>
+            <h2 class="media-heading">Hãy nói về bản thân bạn ?</h2>
+            <p align="justify"> "Đạt danh hiệu quán quân chương trình Vua đầu bếp Việt Nam 2015 là một cột mốc đáng nhớ và thành tích đáng tự hào của tôi! </p>
+            <br>
+            <p align="justify"> Tuy vậy, với tôi đó chỉ là bước khởi đầu để tìm tòi và chinh phục các thử thách tiếp theo trong lĩnh vực ẩm thực. Tôi chọn làm việc cho nhà hàng Restaurant vì biết tại đây tôi có thể học hỏi được rất nhiều điều từ những anh chị bếp trưởng rất giàu kinh nghiệm, có tay nghề xuất sắc và luôn nhiệt tình chỉ bảo cho những người trẻ như tôi. Ngoài ra môi trường làm việc và chế độ đãi ngộ của nhà hàng là rất tốt, giúp tôi có thể toàn tâm cống hiến cho đam mê ẩm thực." </p>
+            <button type="button" class="btn btn-default material_btn material_btn_danger">Xem thêm</button>
+            10<i class="material-icons lg">forum</i> 10<i class="material-icons">thumb_up</i> </div>
+        </div>
+      </section>
+      <hr>
+      <h2 class="page-header">Thông tin</h2>
+      <section id="home_about">
+        <div class="row">
+          <div class="col-xs-12 col-sm-6">
+            <p align="justify"> Được thành lập năm 2006, hàng <strong>Restaurant</strong> là nơi hội tụ những tinh hoa ẩm thực đa dạng của thế giới và truyền thống, tạo sự khác lạ, phong phú, thỏa mãn niềm đam mê ẩm thực của nhiều thực khách. </p>
+            <br>
+            <p align="justify"> Nhà hàng tọa lạc ở vị trí thuộc trung tâm thành phố Hồ Chí Minh, có diện tích rộng rãi và được chia thành nhiều khu vực với mục đích và các món ăn khác nhau: khu ẩm thực Việt Nam, khu ẩm thực thế giới, khu tiệc Buffet, khu tổ chức tiệc cưới, tiệc sinh nhật. Với những điều trên, nhà hàng chúng tôi tự tin sẽ đáp ứng được tốt nhất các yêu cầu đa dạng từ khách hàng. </p>
+            <button type="button" class="btn btn-default material_btn material_btn_danger"> Xem thêm </button>
+          </div>
+          <div class="col-xs-12 col-sm-6"> <img src="images/menu/our_menu.jpg" alt="our_menu"> </div>
+        </div>
+      </section>
+      <hr>
+      <h2 class="page-header">Dịch Vụ</h2>
+      <section id="home_services">
+        <div class="row">
+          <div class="col-sm-6 col-md-3"> <span style="color: #E44; font-size: 100px;" class="glyphicon glyphicon-grain" aria-hidden="true"></span>
+            <h3>Gửi món ăn</h3>
+            <p>Trao món ăn - Trao yêu thương</p>
+          </div>
+          <div class="col-sm-6 col-md-3"> <span style="color: #E44; font-size: 100px;" class="glyphicon glyphicon-fire" aria-hidden="true"></span>
+            <h3>Chế biến theo yêu cầu</h3>
+            <p>Quý khách tự chọn nguyên liệu và yêu cầu chế biến</p>
+          </div>
+          <div class="col-sm-6 col-md-3"> <span style="color: #E44; font-size: 100px;" class="glyphicon glyphicon-glass" aria-hidden="true"></span>
+            <h3>Cung cấp Dụng cụ nhà bếp</h3>
+            <p>Dịch vụ cung cấp dụng cụ nhà bếp</p>
+          </div>
+          <div class="col-sm-6 col-md-3"> <span style="color: #E44; font-size: 100px;" class="glyphicon glyphicon-road" aria-hidden="true"></span>
+            <h3>Tổ chức sự kiện</h3>
+            <p> Dịch vụ tổ chức các sự kiện do khách hàng đặt trước</p>
+          </div>
+        </div>
+        <button type="button" class="btn btn-default material_btn material_btn_danger">Tìm hiểu thêm</button>
+      </section>
+      <hr>
+      <h1 class="page-header">Liên hệ và đóng góp ý kiến với chúng tôi</h1>
+      <section id="home_contact">
+        <div class="row">
+          <div class="form-group materail_input_block materail_input_error col-sm-6">
+            <input type="email" class="form-control materail_input" placeholder="Họ tên:">
+          </div>
+          <div class="form-group materail_input_block materail_input_error col-sm-6">
+            <input type="email" class="form-control materail_input" placeholder="Địa chỉ:">
+          </div>
+          <div class="form-group materail_input_block materail_input_error col-sm-6">
+            <input type="email" class="form-control materail_input" placeholder="Số điện thoại:">
+          </div>
+          <div class="form-group materail_input_block materail_input_error col-sm-6">
+            <input type="email" class="form-control materail_input" placeholder="Email (nếu có):">
+          </div>
+          <div class="form-group materail_input_block materail_input_error col-sm-12">
+            <textarea class="form-control materail_input material_textarea" placeholder="Thông tin muốn liên hệ:"></textarea>
+          </div>
+          <div class="col-sm-6">
+            <h3>Ý kiến của bạn về nhà hàng?</h3>
+            <div class="material_checkbox_group">
+              <input type="checkbox" id="checkbox" name="checkbox" class="material_checkbox material_checkbox_error" />
+              <label class="material_label_checkbox" for="checkbox">Rất hài lòng</label>
+            </div>
+            <div class="material_checkbox_group">
+              <input type="checkbox" id="checkbox2" name="checkbox" class="material_checkbox material_checkbox_error" />
+              <label class="material_label_checkbox" for="checkbox2">Hài lòng</label>
+            </div>
+            <div class="material_checkbox_group">
+              <input type="checkbox" id="checkbox3" name="checkbox" class="material_checkbox material_checkbox_error" />
+              <label class="material_label_checkbox" for="checkbox3">Khá hài lòng</label>
+            </div>
+            <div class="material_checkbox_group">
+              <input type="checkbox" id="checkbox3" name="checkbox" class="material_checkbox material_checkbox_error" />
+              <label class="material_label_checkbox" for="checkbox3">Không hài lòng</label>
+            </div>
+          </div>
+        </div>
+        <button type="button" class="btn btn-default material_btn material_btn_danger">Gửi</button>
+      </section>
+    </div>
+  </div>
+  <!-- /content page -->
+  <br>
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-3" id="social">
+          <h3 class="page-header">Liên hệ qua mạng xã hội</h3>
+          <hr>
+          <ul>
+            <li> <a class="col-xs-3" href="#"> <i class="icon-twitter"></i> </a> <a href="#" class="col-xs-9" style="height: 36px;line-height: 36px">Twitter</a> </li>
+            <li> <a class="col-xs-3" href="#"> <i class="icon-facebook"></i> </a> <a href="#" class="col-xs-9" style="height: 36px;line-height: 36px">Facebook</a> </li>
+            <li> <a class="col-xs-3" href="#"> <i class="icon-youtube"></i> </a> <a href="#" class="col-xs-9" style="height: 36px;line-height: 36px">Youtube</a> </li>
+            <li> <a class="col-xs-3" href="#"> <i class="icon-google-plus"></i> </a> <a href="#" class="col-xs-9" style="height: 36px;line-height: 36px">Google+</a> </li>
+          </ul>
+        </div>
+        <div class="col-sm-3">
+          <h3 class="page-header">Site Map</h3>
+          <hr>
+          <ul>
+            <li><a href="home.php">Trang chủ</a></li>
+            <li><a href="about.php">Giới thiệu</a></li>
+            <li><a href="menu.php">Thực đơn</a></li>
+            <li><a href="services.php">Dịch Vụ</a></li>
+            <li><a href="contact.php">Liên Hệ</a></li>
+          </ul>
+        </div>
+        <div class="col-sm-6">
+          <h3 class="page-header">Liên hệ địa chỉ</h3>
+          <hr>
+          <ul>
+            <li>Số 81 đường Cách Mạng Tháng 8 - Quận 1 - TP.HCM</li>
+            <li>ĐT: (84.4) 35541188 - (84.4) 35541199 &nbsp;&nbsp;-&nbsp;&nbsp; Fax: (84.4) 35539898</li>
+            <li> Email: <a href="mailto:lienhe@restaurant.vn">lienhe@restaurant.vn</a> &nbsp; &nbsp; - &nbsp; &nbsp; Website: <a href="http://google.com">http://google.com</a> </li>
+            <li>Liên hệ Quảng cáo:<br>
+              <b>Trên website:</b> 0963 888 883 &nbsp; - &nbsp; <b>Trên mobile:</b> 0903 203 412</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div id="end-footer">
+      <div class="col-sm-9">
+        <p style="text-align: center"> Copyright © đề 27 assignment Lập Trình Web 2016 </p>
+      </div>
+      <div class="col-sm-3 hidden-xs"><a href="https://validator.w3.org/">Chuẩn W3C</a></div>
+    </div>
+  </footer>
+</div>
+<script src="js/jquery-1.12.1.min.js"></script> 
+<script src="js/bootstrap.min.js"></script> 
+</body>
+</html>
